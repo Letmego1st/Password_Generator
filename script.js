@@ -38,7 +38,20 @@ function generatePassword() {
       choices += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
   
-
+if (choices.length==0) {
+  alert("at least one character type should selected")
+  }
+  else{
+    let psw="";
+    let index=0;
+    let randomchar;
+    for(let i=0; i<pLength; i++){
+      index=Math.floor(Math.random() * choices.length);
+      randomchar=choices[index];
+      psw += randomchar;
+    }
+    return psw;
+  }
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
