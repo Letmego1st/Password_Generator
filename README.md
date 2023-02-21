@@ -19,4 +19,4 @@ USAGE
 
 Deploy
 
-https://github.com/Letmego1st/Password_Generator
+https://letmego1st.github.io/Password_Generator/
