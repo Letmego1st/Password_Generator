@@ -20,7 +20,7 @@ function generatePassword() {
   var lowerCase = confirm("Do you like Lowercase letters in your password? ")
   var numbers = confirm("Do you like numbers letters in your password? ")
   var symbols = confirm("Do you like symbols letters in your password? ")
-  if(!upperYes && !lowerCase && !number && !symbols){ // AND all choices are false
+  if(!upperYes && !lowerCase && !numbers && !symbols){ // AND all choices are false
     return  "Choose valid option either lowercase or uppercase or numbers"
   
   }
@@ -35,7 +35,7 @@ function generatePassword() {
       choices += "0123456789"
     }
     if(symbols){
-      choices += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      choices += "!@#$%^&*()==[[[}}"
     }
   
 if (choices.length==0) {
